@@ -32,7 +32,7 @@ body{
 	color: #202020;
 }
 
-.Action{
+.removeall{
 	font-size: 14px;
 	font-family: 'Open Sans';
 	font-weight: 600;
@@ -79,7 +79,21 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
-.btn{
+.plusbuttons{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+.minusbuttons{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -119,7 +133,7 @@ body{
 	color: #1687d9;
 	cursor: pointer;
 }
-.remove{
+.removebuttons{
 	padding-top: 5px;
 	font-size: 14px;
 	font-family: 'Open Sans';
@@ -128,17 +142,17 @@ body{
 	cursor: pointer;
 }
 /* like */
-.like-btn {
+.likebuttons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 20px;
   }
-  .like-btn {
+  .likebuttons {
     color: gray;
 }
 
-.like-btn.liked {
+.likebuttons.liked {
     color: red;
 }
 
@@ -176,7 +190,7 @@ hr{
 	color: #909090;
 	line-height: 10px;
 }
-.total-amount{
+.totalamount{
 	font-size: 22px;
 	font-family: 'Open Sans';
 	font-weight: 800;
