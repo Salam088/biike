@@ -62,8 +62,17 @@ for (const button of removebuttons ) {
 // button management like
 for (const button of likebuttons ) {
     button.addEventListener('click', () => {
-        const likebuttons = button.
-        likebuttons.like()
+        const icon = button.firstElementChild 
+        const iconClass = icon.getAttribute("class")
+
+        if (iconClass.includes("liked")) {
+           const newClass = "bi bi-heart-fill"
+           icon.setAttribute("class", newClass)
+        } else {
+            const newClass = "bi bi-heart-fill liked"
+            icon.setAttribute("class", newClass)
+        }
+        console.log("========== ",icon)
         checkout()
         console.log()
     })
